@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: 'Lexend Zetta', sans-serif!important;
+}
+.App{
+  background: #161616;
+  /* height: 100vh; */
+}
+.header{
+  color: #ECDBBA;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 40px;
+  padding: 45vh 0 0 200px!important;
+}
+.floating-boxes{
+  /* background:#fff; */
+  width: 550px!important;
+  height:550px;
+  position:relative;
+  /* right:50px; */
+  top: 30px;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: orbit;
+  animation-duration:25s;
+}
+.floating-boxes div{
+  border: 5px solid #ECDBBA;
+  position: absolute;
+  padding: 35px;
+  background: #346751; 
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration:25s;
+  animation-direction: reverse;
+}
+.floating-boxes div:nth-child(1){
+  top: 50px;
+  left: 199px;
+}
+.floating-boxes div:nth-child(2){
+  bottom: 50px;
+  left: 50px;
+}
+.floating-boxes div:nth-child(3){
+  bottom: 50px;
+  right: 50px;
+}
+.floating-boxes div svg{
+  font-size: 4.5rem;
+  color:#161616;
+}
+.sun{
+  height: 1000px
+}
+/* .dot{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50px;
+  height:50px;
+  background:red;
+  border-radius:50%;
+}
+.dot2{
+  position:absolute;
+  bottom:0;
+  right:0;
+  width:50px;
+  height:50px;
+  background:green;
+  border-radius:50%;
+}
+.dot3{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:50px;
+  height:50px;
+  background:purple;
+  border-radius:50%;
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration:10s;
+  animation-direction: reverse;
+}
+.sun{
+  width:200px;
+  height:200px;
+  position:absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: orbit;
+  animation-duration:10s;
+  top:50px;
+  left:50px;
+} */
+@keyframes orbit {
+  from { -webkit-transform:rotate(0deg) } 
+  to { -webkit-transform:rotate(360deg) } 
+}
